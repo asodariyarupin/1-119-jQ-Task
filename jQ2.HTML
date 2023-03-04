@@ -1,0 +1,15 @@
+<head>
+    <title>Disable Right Click Menu in HTML Page using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).bind("contextmenu", function (e) {
+        e.preventDefault();<
+      });
+    </script>
+  </head>
+  
+  
+  <body>
+    Right click menu has been disabled on this page.
+  </body>
+  </html>

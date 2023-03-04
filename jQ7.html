@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create a Div Element using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .my-div {
+      width: 200px;
+      height: 100px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      var div = $('<div>').addClass('my-div').text('Asodariya Rupin');
+      $('body').append(div);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Distinguish Left and Right Mouse Clicks with jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <p>Click anywhere in this box:</p>
+  <div id="click-box"></div>
+  <p id="click-type"></p>
+  <script>
+    $('#click-box').mousedown(function(event) {
+      if (event.which == 1) {
+        $('#click-type').text('Left mouse button clicked');
+      } else if (event.which == 3) {
+        $('#click-type').text('Right mouse button clicked');
+      }
+    });
+  </script>
+</body>
+</html>

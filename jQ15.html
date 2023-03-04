@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detect Enter Key Press with jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <input type="text" id="my-input" placeholder="Type something here...">
+  <p id="message"></p>
+  <script>
+    $('#my-input').keydown(function(event) {
+      if (event.keyCode == 13) {
+        $('#message').text('Enter key pressed!');
+      } else {
+        $('#message').text('');
+      }
+    });
+  </script>
+</body>
+</html>

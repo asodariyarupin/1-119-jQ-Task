@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove and Add Select Options using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <select id="my-select">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <button id="update-select-btn">Update Select Box</button>
+  <script>
+    
+    $('#update-select-btn').click(function() {
+    
+      $('#my-select').empty();
+
+      
+      var $newOption = $('<option>', {
+        value: '4',
+        text: 'Option 4'
+      });
+      $('#my-select').append($newOption);
+
+      
+      $newOption.prop('selected', true);
+    });
+  </script>
+</body>
+</html>

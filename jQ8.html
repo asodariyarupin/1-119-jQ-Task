@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Move DIV using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #outer-div {
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    #inner-div {
+      border: 2px solid blue;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer-div">
+    <p>This is the outer div.</p>
+  </div>
+  <div id="inner-div">
+    <p>This is the inner div.</p>
+  </div>
+  <script>
+
+    var $innerDiv = $('#inner-div');
+
+    
+    $innerDiv.appendTo('#outer-div');
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print a Page using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <p>Click the button below to print this page:</p>
+  <button id="print-btn">Print</button>
+  <script>
+    $('#print-btn').click(function() {
+      window.print();
+    });
+  </script>
+</body>
+</html>

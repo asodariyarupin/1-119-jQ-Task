@@ -1,0 +1,44 @@
+<html>
+
+
+<head>
+  <title>Zebra Strips Table Effect</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("tr:odd").css("background-color", "#ccc");
+      $("tr:even").css("background-color", "#fff");
+    });
+  </script>
+</head>
+
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <td>Rupin</td>
+        <td>Divyesh</td>
+        <td>kenil</td>
+      </tr>
+      <tr>
+        <td>pavan</td>
+        <td>Rutil</td>
+        <td>kirtan</td>
+      </tr>
+      <tr>
+        <td>Raj</td>
+        <td>nimesh</td>
+        <td>manish</td>
+      </tr>
+    </thead>
+  </table>
+</body>
+</html>

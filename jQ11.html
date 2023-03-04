@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Underline All Text using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .underlined {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <p id="my-text">This is some sample text.</p>
+  <button id="underline-btn">Underline Text</button>
+  <script>
+    
+    $('#underline-btn').click(function() {
+      
+      var words = $('#my-text').text().split(' ');
+
+      
+      var $underlinedWords = words.map(function(word) {
+        return $('<span>', {
+          text: word + ' ',
+          class: 'underlined'
+        });
+      });
+
+      
+      $('#my-text').html($underlinedWords);
+    });
+  </script>
+</body>
+</html>

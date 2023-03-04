@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Remove All CSS Classes using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="my-element" class="class1 class2 class3">This is my element</div>
+  <button id="remove-classes-btn">Remove CSS Classes</button>
+  <script>
+    
+    $('#remove-classes-btn').click(function() {
+      
+      $('#my-element').removeClass();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Make First Word Bold using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <p id="my-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin dolor nec nisl volutpat, vel mattis lorem congue.</p>
+  <script>
+    var text = $('#my-paragraph').text();
+    var firstWord = text.substr(0, text.indexOf(' '));
+    var restOfText = text.substr(text.indexOf(' ')+1);
+    $('#my-paragraph').html('<strong>' + firstWord + '</strong> ' + restOfText);
+  </script>
+</body>
+</html>

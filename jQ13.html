@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Style Added with jQuery .css() Function</title>
+  <style>
+    #my-element {
+      background-color: red;
+      color: white;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="my-element">This is my element</div>
+  <button id="remove-style-btn">Remove Style</button>
+  <script>
+    
+    $('#remove-style-btn').click(function() {
+      
+      $('#my-element').css('background-color', '');
+
+      
+      $('#my-element').css('color', '');
+    });
+  </script>
+</body>
+</html>
